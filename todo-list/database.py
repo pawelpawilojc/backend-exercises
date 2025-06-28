@@ -3,7 +3,7 @@ from fastapi import HTTPException
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+
 load_dotenv()
 
 db_pool = None

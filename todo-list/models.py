@@ -8,5 +8,5 @@ class Task(BaseModel):
     description: str
     status: str
     priority: int
-    id: Optional[int] = None  # Make id optional
-    created_at: Optional[datetime] = None  # Accept datetime objects
+    id: Optional[int] = None
+    created_at: Optional[datetime] = None

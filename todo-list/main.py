@@ -6,7 +6,7 @@ import os
 
 app = FastAPI()
 
-# Add CORS middleware
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Allow all origins for testing purposes
@@ -22,7 +22,7 @@ async def startup():
     conn = await get_connection()
     try:
         async with conn.cursor() as cursor:
-            # Use an absolute path to ensure the file is found
+
             sql_file_path = os.path.join(
                 os.path.dirname(__file__), "sql", "init.sql")
             with open(sql_file_path, "r") as sql_file:
@@ -33,7 +33,7 @@ async def startup():
     except Exception as e:
         print(f"Error initializing database: {e}")
     finally:
-        conn.close()  # Use close() instead of release()
+        conn.close()
 
 
 @app.on_event("shutdown")
