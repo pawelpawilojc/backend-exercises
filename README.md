@@ -90,3 +90,22 @@ FastAPI provides interactive API documentation:
 #### Redirect
 https://github.com/user-attachments/assets/6a74d375-f926-4b8d-9d48-de325270096e
 
+## Weather API Application
+
+### Key Endpoints
+- `GET /weather?city={city}&country={country}`: Get current weather for a city
+- `GET /history?limit={limit}`: Get search history (default limit: 10)
+
+### Environment Variables
+In addition to database credentials, you need to set:
+- `OPENWEATHER_API_KEY`: Your API key from OpenWeatherMap
+
+### Screenshots
+#### Database
+![Database](/weather-api/screenshots/database.png)
+
+#### Uvicorn
+![Uvicorn](/weather-api/screenshots/uvicorn.png)
+
+#### History API response
+![weather history](/weather-api/screenshots/history-response.png)
