@@ -1,0 +1,25 @@
+CREATE DATABASE IF NOT EXISTS forms_db;
+
+USE forms_db;
+
+CREATE TABLE IF NOT EXISTS surveys (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS questions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    survey_id INT NOT NULL,
+    question_text TEXT NOT NULL,
+    FOREIGN KEY (survey_id) REFERENCES surveys(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS answers (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question_id INT NOT NULL,
+    answer_text TEXT NOT NULL,
+    votes INT DEFAULT 0,
+    FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
+);
