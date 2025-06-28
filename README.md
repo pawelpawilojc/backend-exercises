@@ -30,9 +30,9 @@ FastAPI provides interactive API documentation:
 - Swagger UI: `http://127.0.0.1:8000/docs`
 
 ### Screenshots
-#### Swagger UI
-![Swagger UI](screenshots/swagger-ui.png)
+#### Database
+![Database](/todo-list/screenshots/todo_db.png)
 
-#### Application Running
-![Application Running](screenshots/app-running.png)
+#### Uvicorn
+![Uvicorn](/todo-list/screenshots/uvicorn.png)
 
