@@ -88,9 +88,5 @@ FastAPI provides interactive API documentation:
 ![Uvicorn](/url-shortener/screenshots/uvicorn.png)
 
 #### Redirect
-![redirect](/url-shortener/screenshots/url-shortener.gif)
-#### Redirect2
-
-
 https://github.com/user-attachments/assets/6a74d375-f926-4b8d-9d48-de325270096e
 
