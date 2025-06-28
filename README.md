@@ -1,6 +1,10 @@
 # Backend Exercises
 
-This repository contains backend projects built with FastAPI and MySQL.
+## Overview
+
+This repository contains a collection of backend API exercises built with **FastAPI** and **MySQL**. The exercises cover: REST API development, database connectivity, CRUD operations, API documentation, environment configuration, and working with relational databases.
+
+These exercises were completed as part of my **Backend** course at **DSW University of Lower Silesia (Uniwersytet Dolnośląski DSW)**.
 
 ### Environment Variables
 Create a `.env` file in `project-folder` with the following variables:
