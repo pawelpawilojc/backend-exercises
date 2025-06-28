@@ -67,3 +67,27 @@ FastAPI provides interactive API documentation:
 
 #### Survey result API response
 ![Survey result](/forms/screenshots/survey_result.png)
+
+## URL Shortener Application
+
+### Key Endpoints
+- `POST /shorten`: Create a shortened URL from a long URL
+- `GET /{short_code}`: Redirect to the original URL
+- `GET /info/{short_code}`: Get information about a shortened URL
+
+### Technical Details
+- Uses a 7-character short code: letters and digits
+- Excludes similarly shaped characters: 0, O, 1, l, I, 5, S, 8, B
+- Total possible combinations: 52^7
+
+### Screenshots
+#### Database
+![Database](/url-shortener/screenshots/database.png)
+
+#### Uvicorn
+![Uvicorn](/url-shortener/screenshots/uvicorn.png)
+
+#### Redirect
+![redirect](/url-shortener/screenshots/url-shortener.gif)
+#### Redirect2
+![redirect](/url-shortener/screenshots/url-shortener.mp4)
