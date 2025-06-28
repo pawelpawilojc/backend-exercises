@@ -4,6 +4,7 @@ This repository contains backend projects built with FastAPI and MySQL.
 
 ## To-Do List Application
 
+
 ### Environment Variables
 Create a `.env` file in `todo-list` with the following variables:
 ```
@@ -27,4 +28,11 @@ The application will be accessible at `http://127.0.0.1:8000`.
 ### API Documentation
 FastAPI provides interactive API documentation:
 - Swagger UI: `http://127.0.0.1:8000/docs`
+
+### Screenshots
+#### Swagger UI
+![Swagger UI](screenshots/swagger-ui.png)
+
+#### Application Running
+![Application Running](screenshots/app-running.png)
 
