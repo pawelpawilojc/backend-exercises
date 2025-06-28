@@ -90,4 +90,7 @@ FastAPI provides interactive API documentation:
 #### Redirect
 ![redirect](/url-shortener/screenshots/url-shortener.gif)
 #### Redirect2
-![redirect](/url-shortener/screenshots/url-shortener.mp4)
+
+
+https://github.com/user-attachments/assets/6a74d375-f926-4b8d-9d48-de325270096e
+
